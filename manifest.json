@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+
+  "name": "Make America Kittens Again",
+  "description": "Replaces images of Donald Trump with kittens, because seriously, f*** that guy.",
+  "version": "1.2.2",
+  "options_ui": {
+    "page": "makaoptions.html",
+    "browser_style": true
+  },
+
+  "permissions": [
+    "http://www.teaandkittens.co.uk/",
+    "storage",
+    "contextMenus"
+  ],
+  "icons": { "48": "maka48.png",
+          "128": "maka128.png" },
+  "browser_action": {
+          "default_icon": {
+	           "48": "maka48.png",
+			   "128": "maka128.png"
+          },
+          "default_title": "#MAKA",
+          "default_popup": "makaoptions.html"
+        },
+
+  "background": {
+    "scripts": ["setmakamenu.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["maka.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    "kittens/*.jpg"
+  ]
+}
