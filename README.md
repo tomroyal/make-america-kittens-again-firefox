@@ -1,12 +1,5 @@
 # Make-America-Kittens-Again
 
-This is Make America Kittens Again:
+Now that Firefox uses v3 manifest files, the code for MAKA for Firefox can be found here:
 
-https://github.com/tomroyal/Make-America-Kittens-Again
-
-https://chrome.google.com/webstore/detail/make-america-kittens-agai/klchnmggepghlcolikgaekpibclpmgcm
-
-.. that replaces images of Donald Trump with kittens, reworked a bit to support Firefox Quantum. It's currently missing a few bells and whistles but mostly works.
-
-@tomroyal
-tomroyal.com
+https://github.com/tomroyal/Make-America-Kittens-Again/tree/Firefox
